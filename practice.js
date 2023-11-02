@@ -66,8 +66,16 @@ function divideBiggerNumByThree(num1, num2) {
   //   bigNum = num2;
   //   return bigNum / 3;
   // }
+  let bigNum;
+  if (num1 > num2) {
+    bigNum = num1;
+  } else {
+    bigNum = num2;
+  }
 
-  return num1 > num2 ? num1 * 2 : num2 / 3 //Option1
+  return bigNum / 3
+
+  // return num1 > num2 ? num1 * 2 : num2 / 3 //Option2
 }
 
 const findBiggerEl = (x, y) => { //newly added
@@ -85,7 +93,9 @@ function eatMostTacos(sum1, sum2) {
   //   return `I ate ${bigNum} tacos.`;
   // }
 
-  return findBiggerEl(sum1, sum2) ? `I ate ${bigNum} tacos.` : `I ate ${bigNum} tacos.`
+
+
+  //return findBiggerEl(sum1, sum2) ? `I ate ${bigNum} tacos.` : `I ate ${bigNum} tacos.` //Option 2
 }
 
 const createAdoptionMessage = (weight) => {
