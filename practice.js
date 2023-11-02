@@ -84,18 +84,14 @@ const findBiggerEl = (x, y) => { //newly added
 
 function eatMostTacos(sum1, sum2) {
 
-  // let bigNum;
-  // if (sum1 > sum2) {
-  //   bigNum = sum1;
-  //   return `I ate ${bigNum} tacos.`;
-  // } else {
-  //   bigNum = sum2;
-  //   return `I ate ${bigNum} tacos.`;
-  // }
+  let bigNum;
+  if (sum1 > sum2) {
+    bigNum = sum1;
+  } else {
+    bigNum = sum2;
+  }
 
-
-
-  //return findBiggerEl(sum1, sum2) ? `I ate ${bigNum} tacos.` : `I ate ${bigNum} tacos.` //Option 2
+  return findBiggerEl(sum1, sum2) ? `I ate ${bigNum} tacos.` : `I ate ${bigNum} tacos.` //Option 2
 }
 
 const createAdoptionMessage = (weight) => {
